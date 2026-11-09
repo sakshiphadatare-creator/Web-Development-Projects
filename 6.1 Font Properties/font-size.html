@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Font-Size</title>
+  <style>
+    #pixel {
+      font-size: 20px;
+    }
+
+    #point {
+      font-size: 20pt;
+    }
+
+    #em {
+      font-size: 1em;
+    }
+
+    #rem {
+      font-size: 1rem;
+    }
+
+    footer {
+      font-size: 12pt;
+    }
+
+    html {
+      font-size: xx-large;
+    }
+  </style>
+</head>
+
+<body>
+  <p id="pixel">1 Pixel is 1/96 of an Inch</p>
+  <p id="point">1 Point is 1/72 of an Inch</p>
+  <footer>
+    <p id="em">1em is 100% the size of the parent element</p>
+    <p id="rem">1rem is 100% the size of the root element</p>
+  </footer>
+</body>
+
+</html>
+
+<!--
+Inside the Style
+paragraph:
+#name-of-the-id{
+  font-size: px, pt, em, rem;
+}
+
+html { ... }:
+This CSS rule sets the base font size for the entire webpage by targeting the <html> element.
+
+🔹 html { ... }
+Targets the root element of the page.
+
+Any font size set here becomes the starting point for all text unless overridden by child elements.
+
+🔹 font-size: xx-large;
+Applies a predefined size from the browser’s keyword scale.
+
+xx-large is bigger than x-large, large, medium, etc.
+
+It’s useful when you want larger default text across your site or app — especially for accessibility or visual emphasis.
+
+html{
+font-size: xx-large;
+}
+
+footer{}:
+It’s a special tag used to define the bottom part of a webpage — like the closing section.
+
+Example:
+html
+<footer>
+  © 2025 Sakshi's Classroom. All rights reserved.
+</footer>
+🔧 Example with CSS:
+css
+footer {
+  font-size: 14px;
+  color: gray;
+  text-align: center;
+}
+This will make the footer text:
+14px in size
+Gray in color
+Centered on the page
+
+-->
